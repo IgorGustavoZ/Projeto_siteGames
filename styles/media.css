@@ -34,8 +34,10 @@
 
     main h2{
         display: flex;
+        position: relative;
         margin-right: auto;
         margin-left: auto;
+        left: -10px;
         width: 125px;
     }
 

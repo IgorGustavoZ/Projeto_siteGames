@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --preto: #000;
+    --bgcolor-main: #3C6973;
+    --play-color: #F27505;
+    --h1-color: #3C6973;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    text-align: center;
+    position: sticky;
+    
+    background-color: #00000071;
+    
+    
+}
+
+.logo{
+    position: relative;
+    right: 25vw;
+    margin: auto;
+}
+
+header a{
+    position: relative;
+    top: 60px;
+    font-size: 0.85em;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+   
+    border: 2px solid white ;
+    border-radius: 10px;
+    padding: 10px;
+
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.473);
+    background-color: white;
+    font-size: 0.9em;
+    color: #000;
+    transition: font-size 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+}
+
+
+
+.navegacao{
+    margin-right: 5vw;
+}
+
+header img{
+    width: 130px;
+    height: 130px;
+}
+
+main{
+    position: relative;
+    
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.363), #3c697362), url(../contents/bg.crdownload);
+    
+    background-position: top center;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+
+main h1{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variant: small-caps;
+
+    font-size: 5em;
+    line-height: 0.8em;
+    text-shadow: 1px 5px 20px rgba(0, 0, 0, 0.678);
+}
+
+main h1,h2 {
+    color: white;
+}
+
+main a{
+    text-decoration: none;
+}
+
+
+
+main h2{
+    display: inline-block;
+    padding: 15px;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.507);
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100%;
+    margin-bottom: 300px;
+    margin-top: 1.5em;
+    left: 10px;
+    background-color: #F27505;
+    animation: botao-animation 1s infinite alternate;
+}
+
+main h2:hover{
+    background-color: #ce6203;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    animation: end;
+}
+
+@keyframes botao-animation {
+    to{
+        font-size: 100%;
+    }
+    from{
+        font-size: 102%;
+    }
+}
+
+section{
+    position: relative;
+
+    top: 100px;
+    margin-left: 30px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bgcolor-main);
+    padding: 20px;
+}
+
+footer p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
+    padding: 20px;
+    color: white;
+}
+
+footer img{
+    width: 40%;
+    height: 40%;
+}

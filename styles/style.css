@@ -80,7 +80,7 @@ main{
     position: relative;
     
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.363), #3c697362), url(../contents/bg.crdownload);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.363), #3c697362), url(../contents/bg.jpg);
     
     background-position: top center;
     background-color: #000;
